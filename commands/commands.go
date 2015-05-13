@@ -12,7 +12,7 @@ var Commands = []cli.Command{
 		Action:      args,
 	},
 	{
-		Name:        "exec",
+		Name:        "shellexec",
 		Usage:       "Execute other command.",
 		Description: `Execute other command.`,
 		Action:      shellexec,
