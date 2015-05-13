@@ -3,10 +3,11 @@ package commands
 
 import (
 	"fmt"
+	"github.com/codegangsta/cli"
 	"time"
 )
 
-func now() {
+func now(c *cli.Context) {
 	now := time.Now()
 	fmt.Println("now: ", now)
 	fmt.Println("now: ", now.Format("20060102"))       // YYYYMMDD

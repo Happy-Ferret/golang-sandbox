@@ -2,13 +2,14 @@
 package commands
 
 import (
+	"github.com/codegangsta/cli"
 	"io/ioutil"
 	"log"
 	"os"
 	"path"
 )
 
-func filewrite() {
+func filewrite(c *cli.Context) {
 	args := os.Args
 	if len(args) != 3 {
 		log.Fatal("Usage: ", path.Base(args[0]), " filename text")

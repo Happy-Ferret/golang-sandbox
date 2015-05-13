@@ -6,9 +6,10 @@ import (
 	"log"
 	"os"
 	"path"
+	"github.com/codegangsta/cli"
 )
 
-func args() {
+func args(c *cli.Context) {
 	args := os.Args
 	if len(args) <= 1 {
 		log.Fatal("Usage: ", path.Base(args[0]), " anything")

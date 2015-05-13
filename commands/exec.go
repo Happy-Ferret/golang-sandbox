@@ -7,9 +7,10 @@ import (
 	"os"
 	"os/exec"
 	"path"
+	"github.com/codegangsta/cli"
 )
 
-func execscript() {
+func shellexec(c *cli.Context) {
 	args := os.Args
 	if len(args) < 2 {
 		log.Fatal("Usage: ", path.Base(args[0]), " cmd")

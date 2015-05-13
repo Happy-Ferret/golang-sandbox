@@ -7,9 +7,10 @@ import (
 	"os"
 	"path"
 	"strconv"
+	"github.com/codegangsta/cli"
 )
 
-func stringtoi() {
+func stringtoi(c *cli.Context ) {
 	args := os.Args
 	if len(args) != 2 {
 		log.Fatal("Usage: ", path.Base(args[0]), " number")
