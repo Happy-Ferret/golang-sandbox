@@ -1,12 +1,11 @@
 package main
 
 import (
-	"os"
-	"path"
-
 	"github.com/codegangsta/cli"
 	"github.com/zchee/golang-sandbox/commands"
 	"github.com/zchee/golang-sandbox/version"
+	"os"
+	"path"
 )
 
 func main() {
@@ -27,4 +26,3 @@ func main() {
 
 	app.Run(os.Args)
 }
-r

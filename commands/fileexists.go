@@ -3,10 +3,10 @@ package commands
 
 import (
 	"fmt"
+	"github.com/codegangsta/cli"
 	"log"
 	"os"
 	"path"
-	"github.com/codegangsta/cli"
 )
 
 func fileexists(c *cli.Context) {

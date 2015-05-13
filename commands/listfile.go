@@ -3,6 +3,7 @@ package commands
 import (
 	"flag"
 	"fmt"
+	"github.com/codegangsta/cli"
 	"io/ioutil"
 	"os"
 	"path"
@@ -32,7 +33,7 @@ func IsDirectory(name string) (isDir bool, err error) {
 	return fInfo.IsDir(), nil
 }
 
-func listfile() {
+func listfile(c *cli.Context) {
 	var arg string
 
 	// -fオプション flag.Arg(0)だとファイル名が展開されてしまうようなので

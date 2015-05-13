@@ -3,11 +3,11 @@ package commands
 
 import (
 	"fmt"
+	"github.com/codegangsta/cli"
 	"log"
 	"os"
 	"os/exec"
 	"path"
-	"github.com/codegangsta/cli"
 )
 
 func shellexec(c *cli.Context) {

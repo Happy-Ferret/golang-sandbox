@@ -3,14 +3,14 @@ package commands
 
 import (
 	"fmt"
+	"github.com/codegangsta/cli"
 	"log"
 	"os"
 	"path"
 	"strconv"
-	"github.com/codegangsta/cli"
 )
 
-func stringtoi(c *cli.Context ) {
+func stringtoi(c *cli.Context) {
 	args := os.Args
 	if len(args) != 2 {
 		log.Fatal("Usage: ", path.Base(args[0]), " number")

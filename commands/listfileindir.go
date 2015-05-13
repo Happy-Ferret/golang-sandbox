@@ -3,11 +3,11 @@ package commands
 
 import (
 	"fmt"
+	"github.com/codegangsta/cli"
 	"io/ioutil"
 	"log"
 	"os"
 	"path"
-	"github.com/codegangsta/cli"
 )
 
 func listfileindir(c *cli.Context) {
